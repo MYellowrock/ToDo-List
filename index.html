@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Murat Sarıkaya">
+    <meta name="description" content="Murat Sarıkaya | Todo List">
+
+    <title>Todo List</title>
+
+    <!--Css documents-->
+    <link rel="stylesheet" href="main.css">
+
+    <!--Font Family-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="section-1">
+            <h1 class="big-title">Todo List</h1>
+        </div>
+        <hr>
+        <div class="section-2" id="section-2-id">
+            <form id="todo-form-id" class="todo-form-class">
+                <label for="todo" id="todo-label">Activity</label>
+                <input type="text" id="todo-input" name="todo" placeholder="Enter the activity">
+                <button type="submit" class="btn btn-danger button-1">Insert</button>
+            </form>
+            <hr>
+        </div>
+        <hr>
+        <div class="section-filter section-3">
+            <h4 class="mb-2">Todo Filter</h4>
+            <input type="text" id="todo-filter" name="todo-filter" placeholder="Search Todos">
+        </div>
+        <hr>
+        <div class="section-3" id="section-three">
+            <h3 class="mb-4">Todos</h3>
+            <ul class="todo-ulist">
+                <!-- <li class="todo-list">
+                    <p class="aligned-items">Todo</p>
+                    <a href="#" class="link-1">
+                        <i class="fa-sharp fa-solid fa-trash aligned-items icon-1"></i>
+                    </a>
+                </li> -->
+            </ul>
+
+            <button type="submit" id="clear-button" class="btn btn-danger button-2">Delete All</button>
+        </div>
+        <hr>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
